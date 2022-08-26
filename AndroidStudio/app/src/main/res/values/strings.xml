@@ -1,0 +1,109 @@
+<resources>
+    <!--Profile-->
+    <string name="id">Id: </string>
+    <string name="profile_name_textview">Name:</string>
+    <string name="profile_name">ex. Matteo</string>
+    <string name="profile_change_name_button">Save</string>
+    <string name="profile_friends_tab">Friends</string>
+    <string name="profile_friends_request_tab">Requests</string>
+    <string name="profile_add_friend_tab">Add friend</string>
+
+    <!--Profile Friend-->
+    <string name="add_friend_title">Add a friend</string>
+    <string name="find_friend_textview">Search:</string>
+    <string name="find_friend_hint">ex. 123456</string>
+    <string name="add_friend_button">Add</string>
+    <string name="friend_found">Request sent!</string>
+    <string name="friend_already_sent">Friend request already sent</string>
+    <string name="friend_already_added">This user is already your friend</string>
+    <string name="friend_not_found">User not found</string>
+    <string name="friend_in_pending">User already in your requests tab</string>
+    <string name="friend_yourself">You can\'t add yourself</string>
+    <string name="remove_friend_alert_title">Remove this friend</string>
+    <string name="remove_friend_alert_message">Want you remove</string>
+
+    <!--Login/Logout-->
+    <string name="username_login">Username</string>
+    <string name="hint_username_login">You can change your username at any time</string>
+    <string name="access_with_google">Access with:</string>
+    <string name="google_button">Google</string>
+    <string name="button_logout">Logout</string>
+
+    <!--Navigation-->
+    <string name="button_play">Play</string>
+    <string name="back">Back</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="close">Close</string>
+    <string name="lobby_ready">Ready</string>
+    <string name="leave_lobby_button">Leave</string>
+    <string name="party_creation_button">Create party</string>
+
+    <!--Lobby-->>
+    <string name="invitations_title">Invites</string>
+    <string name="party_invitations">Party invitations</string>
+    <string name="invites_friends">Invites friends</string>
+    <string name="lobby_title_textview">Lobby</string>
+    <string name="team1">Team Green</string>
+    <string name="team2">Team Red</string>
+    <string name="leave_lobby_alert">Leave lobby</string>
+    <string name="leave_lobby_alert_message">Are you sure you want to leave the lobby?</string>
+
+    <string name="app_name">Enigma</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="invite_of">Invite of:</string>
+    <string name="lobby_name">Lobby name:</string>
+    <string name="title_select_lobby_name">Choose the lobby name</string>
+    <string name="confirm">Create</string>
+    <string name="lobby_name_hint">Type the name</string>
+    <string name="default_lobby_name">New lobby</string>
+    <string name="user_invited">User invited</string>
+    <string name="message">Message</string>
+    <string name="lobby_cancel">Cancel</string>
+    <string name="team">Team</string>
+    <string name="turn">turn</string>
+    <string name="team_chat">Chat team</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="north">NORTH</string>
+    <string name="south">SOUTH</string>
+    <string name="east">EAST</string>
+    <string name="west">WEST</string>
+    <string name="vote_text1">Do you want to vote</string>
+    <string name="vote_text2">this word?</string>
+    <string name="vote">Vote</string>
+    <string name="give_clue">Give Clue</string>
+    <string name="clue_hint_edittext">Type your clue here</string>
+    <string name="pass_button">Pass</string>
+    <string name="don_t_pass_button">Passing…</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="remaining_hints">Remaining hints:</string>
+    <string name="phase1">Captain choosing a clue</string>
+    <string name="phase2">Members are guessing</string>
+    <string name="you_win">Your team won</string>
+    <string name="you_lose">Your team lost</string>
+    <string name="come_back_home">Go to home</string>
+    <string name="leave_game_lobby_alert">Leave the game</string>
+    <string name="leave_game_lobby_alert_message">Are you sure you want to leave the game?</string>
+    <string name="not_enough_player">Not enough player</string>
+    <string name="not_enough_player_my_team_alert_message">You are the last player on the team</string>
+    <string name="not_enough_player_opponent_team_alert_message">The opposing team has not enough players</string>
+    <string name="lobby_full">Lobby full</string>
+    <string name="copied">Id copied to clipboard</string>
+    <string name="tap_to_copy">Tap to copy</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="east_">E</string>
+    <string name="west_">W</string>
+    <string name="north_">N</string>
+    <string name="south_">S</string>
+    <string name="loading">Loading…</string>
+</resources>

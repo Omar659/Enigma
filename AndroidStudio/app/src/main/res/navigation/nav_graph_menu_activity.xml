@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.androidstudio.home.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_setupGameFragment"
+            app:destination="@id/setupGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setupGameFragment"
+        android:name="com.example.androidstudio.home.lobby.SetupGameFragment"
+        android:label="fragment_setup_game"
+        tools:layout="@layout/fragment_setup_game" >
+        <action
+            android:id="@+id/action_setupGameFragment_to_partyInvitationFragment"
+            app:destination="@id/partyInvitationFragment" />
+        <action
+            android:id="@+id/action_setupGameFragment_to_partyCreationLoadingFragment"
+            app:destination="@id/partyCreationLoadingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPartyFragment"
+        android:name="com.example.androidstudio.home.lobby.CreatePartyFragment"
+        android:label="fragment_create_party"
+        tools:layout="@layout/fragment_create_party" />
+    <fragment
+        android:id="@+id/partyInvitationFragment"
+        android:name="com.example.androidstudio.home.lobby.PartyInvitationFragment"
+        android:label="fragment_party_invitation"
+        tools:layout="@layout/fragment_party_invitation" >
+        <action
+            android:id="@+id/action_partyInvitationFragment_to_acceptInviteToLobbyLoadingFragment"
+            app:destination="@id/acceptInviteToLobbyLoadingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/partyCreationLoadingFragment"
+        android:name="com.example.androidstudio.loadings.PartyCreationLoadingFragment"
+        android:label="fragment_party_creation_loading"
+        tools:layout="@layout/fragment_party_creation_loading" >
+        <action
+            android:id="@+id/action_partyCreationLoadingFragment_to_createPartyFragment"
+            app:destination="@id/createPartyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acceptInviteToLobbyLoadingFragment"
+        android:name="com.example.androidstudio.loadings.AcceptInviteToLobbyLoadingFragment"
+        android:label="fragment_accept_invite_to_lobby_loading"
+        tools:layout="@layout/fragment_accept_invite_to_lobby_loading" >
+        <action
+            android:id="@+id/action_acceptInviteToLobbyLoadingFragment_to_createPartyFragment"
+            app:destination="@id/createPartyFragment" />
+    </fragment>
+</navigation>

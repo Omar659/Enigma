@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/choose_direction_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp"
+    android:paddingBottom="30dp"
+    tools:context=".game.ChooseDirectionFragment"
+    android:background="@drawable/background_game_team1">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/center"
+        />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/one_third_vertical"
+        app:layout_constraintEnd_toStartOf="@id/center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/two_third_vertical"
+        app:layout_constraintStart_toEndOf="@id/center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint_space"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.08"
+        />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selection"
+        app:layout_constraintTop_toBottomOf="@id/hint_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttons"
+        app:layout_constraintTop_toBottomOf="@id/hint_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.85"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/buttons"
+        app:layout_constraintEnd_toStartOf="@id/two_third_vertical"
+        app:layout_constraintStart_toEndOf="@id/one_third_vertical"
+        app:layout_constraintTop_toBottomOf="@id/selection">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraint_center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/textview_north_choose_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/game_clue_button3"
+            android:fontFamily="@font/handwriting_draft"
+            android:gravity="center"
+            android:text="@string/north_"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/compass_choose_directions"
+            app:layout_constraintEnd_toEndOf="@id/compass_choose_directions"
+            app:layout_constraintStart_toStartOf="@id/compass_choose_directions"
+            app:layout_constraintTop_toTopOf="@id/compass_choose_directions"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/textview_south_choose_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/game_clue_button3"
+            android:fontFamily="@font/handwriting_draft"
+            android:gravity="center"
+            android:text="@string/south_"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/compass_choose_directions"
+            app:layout_constraintEnd_toEndOf="@id/compass_choose_directions"
+            app:layout_constraintStart_toStartOf="@id/compass_choose_directions"
+            app:layout_constraintTop_toTopOf="@id/compass_choose_directions"
+            app:layout_constraintVertical_bias="1.0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_west_choose_direction"
+            android:text="@string/west_"
+            android:background="@drawable/game_clue_button3"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/compass_choose_directions"
+            app:layout_constraintEnd_toEndOf="@id/compass_choose_directions"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/compass_choose_directions"
+            app:layout_constraintTop_toTopOf="@id/compass_choose_directions"
+            android:fontFamily="@font/handwriting_draft"/>
+
+        <TextView
+            android:id="@+id/textview_east_choose_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/game_clue_button3"
+            android:fontFamily="@font/handwriting_draft"
+            android:gravity="center"
+            android:text="@string/east_"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/compass_choose_directions"
+            app:layout_constraintEnd_toEndOf="@id/compass_choose_directions"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/compass_choose_directions"
+            app:layout_constraintTop_toTopOf="@id/compass_choose_directions" />
+
+        <ImageView
+            android:id="@+id/compass_choose_directions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.63"
+            android:scaleY="0.63"
+            android:translationZ="-5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/compass_directions" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/lobby_cancel"
+        android:id="@+id/cancel_button_choose_direction"
+        android:background="@drawable/game_clue_button1"
+        app:layout_constraintTop_toBottomOf="@id/buttons"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@id/one_third_vertical"
+        app:layout_constraintEnd_toStartOf="@id/center"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/confirm_button_choose_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/game_clue_button1"
+        android:text="@string/confirm_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/two_third_vertical"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@id/center"
+        app:layout_constraintTop_toBottomOf="@id/buttons" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.20"
+        android:id="@+id/left"
+        />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
+        android:id="@+id/right"
+        />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/right"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.333333333"
+        android:id="@+id/center_left"
+        />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/right"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.666666666"
+        android:id="@+id/center_right"
+        />
+
+    <Button
+        android:id="@+id/direction1_button_choose_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/game_clue_button1"
+        android:text="OVEST"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/selection"
+        app:layout_constraintEnd_toStartOf="@id/center_left"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintTop_toBottomOf="@id/hint_space" />
+
+    <Button
+        android:id="@+id/direction2_button_choose_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/game_clue_button1"
+        android:text="NORD"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/selection"
+        app:layout_constraintEnd_toStartOf="@id/center_right"
+        app:layout_constraintStart_toEndOf="@id/center_left"
+        app:layout_constraintTop_toBottomOf="@id/hint_space" />
+
+    <Button
+        android:id="@+id/direction3_button_choose_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/game_clue_button1"
+        android:text="SUD"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/selection"
+        app:layout_constraintEnd_toStartOf="@id/right"
+        app:layout_constraintStart_toEndOf="@id/center_right"
+        app:layout_constraintTop_toBottomOf="@id/hint_space" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remaining_hints_textview_choose_direction"
+        android:text="@string/remaining_hints"
+        android:textColor="@color/choose_direction_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/hint_space"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
