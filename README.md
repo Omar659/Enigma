@@ -1,4 +1,6 @@
 # Enigma
+Application done for a course at "La Sapienza Università di Roma"
+
 Cunning game looking for the right words to win the game
 
 N.B. the files in git ignore are stored on a private hard-drive as they contain sensitive data.
