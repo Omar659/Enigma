@@ -1,5 +1,5 @@
 # Enigma
-Application done for a course at "La Sapienza Università di Roma"
+Application done for the course of Mobile Application and Cloud Computing at "La Sapienza Università di Roma"
 
 Cunning game looking for the right words to win the game
 
